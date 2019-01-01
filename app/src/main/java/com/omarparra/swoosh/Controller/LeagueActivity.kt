@@ -1,10 +1,11 @@
-package com.omarparra.swoosh
+package com.omarparra.swoosh.Controller
 
 import android.content.Intent
-import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
 import android.widget.Toast
+import com.omarparra.swoosh.Utilities.EXTRA_LEAGUE
+import com.omarparra.swoosh.R
 import kotlinx.android.synthetic.main.activity_league.*
 
 class LeagueActivity : BaseActivity() {
@@ -40,7 +41,7 @@ class LeagueActivity : BaseActivity() {
     fun leagueNextClicked(view: View){
         if ( !selectedLeague.isEmpty() ){
             val skillActivity = Intent(this, SkillActivity::class.java)
-            //add a constant with a value to sent it to SkillActivity 
+            //add a constant with a value to sent it to SkillActivity
             skillActivity.putExtra(EXTRA_LEAGUE, selectedLeague)
             startActivity(skillActivity)
         }else{
