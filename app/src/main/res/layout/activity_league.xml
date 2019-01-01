@@ -43,22 +43,24 @@
                 android:text="@string/mens"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content" tools:layout_editor_absoluteY="246dp"
-                tools:layout_editor_absoluteX="206dp" android:id="@+id/toggleButton" tools:text="Mens"
-                android:textOff="@string/mens" android:textOn="@string/mens" android:background="@drawable/swoosh_toggle"
-                android:textColor="#fff" android:fontFamily="@font/montserrat"/>
+                tools:layout_editor_absoluteX="206dp" android:id="@+id/mensLeagueBtn" tools:text="Mens"
+                android:textOff="@string/mens" android:textOn="@string/mens"
+                android:background="@drawable/swoosh_toggle"
+                android:textColor="#fff" android:fontFamily="@font/montserrat" android:onClick="onMensClick"/>
         <ToggleButton
                 android:text="@string/womens"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content" android:id="@+id/toggleButton2" android:layout_marginTop="16dp"
-                android:layout_marginBottom="16dp" android:textOff="@string/womens" android:textOn="@string/womens" tools:text="Womens"
+                android:layout_height="wrap_content" android:id="@+id/womensLeagueBtn" android:layout_marginTop="16dp"
+                android:layout_marginBottom="16dp" android:textOff="@string/womens" android:textOn="@string/womens"
+                tools:text="Womens"
                 android:background="@drawable/swoosh_toggle" android:textColor="#fff"
-                android:fontFamily="@font/montserrat"/>
+                android:fontFamily="@font/montserrat" android:onClick="onWomensClick"/>
         <ToggleButton
                 android:text="@string/co_ed"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content" android:id="@+id/toggleButton3" android:textOff="@string/co_ed"
+                android:layout_height="wrap_content" android:id="@+id/coedLeagueBtn" android:textOff="@string/co_ed"
                 android:textOn="@string/co_ed" tools:text="Co-Ed" android:background="@drawable/swoosh_toggle"
-                android:textColor="#fff" android:fontFamily="@font/montserrat"/>
+                android:textColor="#fff" android:fontFamily="@font/montserrat" android:onClick="onCoEdClick"/>
     </LinearLayout>
     <Button
             android:text="@string/next"
